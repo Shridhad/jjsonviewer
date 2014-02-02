@@ -2,14 +2,14 @@
     font-size: 13px;
     line-height: 1.2;
     font-family: monospace;
+    padding-left: 0;
+    margin-left: 20px;
 }
 .jjson-container,
 .jjson-container ul{
     list-style: none outside none;
 }
-.jjson-container {
-    padding-left: 0;
-}
+
 .jjson-container > li  > .key,
 .jjson-container .array .key{
     display: none;
@@ -31,6 +31,7 @@
 }
 .jjson-container .expanded{
     cursor: pointer;
+    position: relative;
 }
 
 .jjson-container .expanded:before{
@@ -46,20 +47,16 @@
     vertical-align: middle;
     font-family: sans-serif;
     color: #933;
+    position: absolute;
+    left: -15px;
+    top: 3px;
 }
+
 .jjson-container .collapsed:before{
     content: "+";
-    padding: 0;
     font-size: 14px;
-    margin: 0;
-    display: inline-block;
-    width: 13px;
-    text-align: center;
-    height: 13px;
-    line-height: 13px;
-    vertical-align: middle;
-    font-family: sans-serif;
     color: #000;
+    top: 1px;
 }
 
 .jjson-container .collapsed .close:before {
