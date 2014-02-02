@@ -1,0 +1,63 @@
+.jjson-container {
+    font-size: 13px;
+    line-height: 1.2;
+    font-family: monospace;
+}
+.jjson-container,
+.jjson-container ul{
+    list-style: none outside none;
+}
+.jjson-container {
+    padding-left: 0;
+}
+.jjson-container > li  > .key,
+.jjson-container .array .key{
+    display: none;
+}
+.jjson-container .null{
+    color: #999;
+}
+.jjson-container .string{
+    color: #4e9a06;
+}
+.jjson-container .number{
+    color: #a40000;
+}
+.jjson-container .boolean{
+    color: #c4a000;
+}
+.jjson-container .key{
+    color: #204a87;
+}
+.jjson-container .expanded{
+    cursor: pointer;
+}
+
+.jjson-container .expanded:before{
+    content: "-";
+    padding: 0;
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
+    width: 13px;
+    text-align: center;
+    height: 13px;
+    line-height: 13px;
+    vertical-align: middle;
+    font-family: sans-serif;
+    color: #933;
+}
+.jjson-container .collapsed:before{
+    content: "+";
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    width: 13px;
+    text-align: center;
+    height: 13px;
+    line-height: 13px;
+    vertical-align: middle;
+    font-family: sans-serif;
+    color: #000;
+}
