@@ -14,6 +14,15 @@
 .jjson-container .array .key{
     display: none;
 }
+
+.jjson-container li:after {
+    content: ",";    
+}
+
+.jjson-container li:last-child:after {
+    content: "";
+}
+
 .jjson-container .null{
     color: #999;
 }
