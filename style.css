@@ -61,3 +61,8 @@
     font-family: sans-serif;
     color: #000;
 }
+
+.jjson-container .collapsed .close:before {
+    content: "... ";    
+    color: #999;
+}

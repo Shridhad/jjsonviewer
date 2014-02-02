@@ -47,9 +47,9 @@
   			klass = "array";
   		}
   		if(type == "object") {
-  			var object = '<li class="expanded"><span class="key">' + key + ': </span> <span>{</span> <ul class="' + klass + '">';
+  			var object = '<li class="expanded"><span class="key">' + key + ': </span> <span class="open">{</span> <ul class="' + klass + '">';
   			object = object + json2html(value);
-  			return object + "</ul><span>}</span></li>";
+  			return object + '</ul><span class="close">}</span></li>';
   		}
   		return '<li><span class="key">' + key + ': </span><span class="'+ type + '">' + value + '</span></li>';
   	}
