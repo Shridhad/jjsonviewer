@@ -61,13 +61,13 @@
 	$(document).on("click", '.jjson-container .expanded', function(event) {
     event.preventDefault();
     event.stopPropagation();
-    $(this).addClass('collapsed').parent().find(">ul").hide();
+    $(this).addClass('collapsed').parent().find(">ul").slideUp(100);
   });
 
 	$(document).on('click', '.jjson-container .expanded.collapsed', function(event) {
   	event.preventDefault();
   	event.stopPropagation();
-  	$(this).removeClass('collapsed').parent().find(">ul").show();
+  	$(this).removeClass('collapsed').parent().find(">ul").slideDown(100);
 	});
 
 }(window.jQuery);
