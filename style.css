@@ -48,15 +48,10 @@
 
 .jjson-container .expanded:before{
     content: "-";
-    padding: 0;
     font-size: 16px;
-    margin: 0;
-    display: inline-block;
     width: 13px;
     text-align: center;
-    height: 13px;
     line-height: 13px;
-    vertical-align: middle;
     font-family: sans-serif;
     color: #933;
     position: absolute;
@@ -71,7 +66,7 @@
     top: 1px;
 }
 
-.jjson-container .collapsed .close:before {
+.jjson-container li .collapsed ~ .close:before {
     content: "... ";    
     color: #999;
 }
