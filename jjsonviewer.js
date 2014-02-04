@@ -47,7 +47,7 @@
   			klass = "array";
   		}
   		if(type == "object") {
-  			var object = '<li class="expanded"><span class="key">' + key + ': </span> <span class="open">{</span> <ul class="' + klass + '">';
+  			var object = '<li><span class="expanded"></span><span class="key">' + key + ': </span> <span class="open">{</span> <ul class="' + klass + '">';
   			object = object + json2html(value);
   			return object + '</ul><span class="close">}</span></li>';
   		}
@@ -57,13 +57,13 @@
   	$(document).on("click", '.jjson-container .expanded', function(e){
 	    e.preventDefault();
 	    e.stopPropagation();
-	    $(this).addClass('collapsed').find("ul").slideUp();
+	    $(this).addClass('collapsed').parent().find("ul").hide();
 	});
 
   	$(document).on('click', '.jjson-container .expanded.collapsed', function(e){
     	e.preventDefault();
     	e.stopPropagation();
-    	$(this).removeClass('collapsed').find("ul").slideDown();
+    	$(this).removeClass('collapsed').parent().find("ul").show();
   	});
 
 }(window.jQuery);

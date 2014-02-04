@@ -10,6 +10,10 @@
     list-style: none outside none;
 }
 
+.jjson-container li {
+    position: relative;
+}
+
 .jjson-container > li  > .key,
 .jjson-container .array .key{
     display: none;
@@ -40,7 +44,6 @@
 }
 .jjson-container .expanded{
     cursor: pointer;
-    position: relative;
 }
 
 .jjson-container .expanded:before{
