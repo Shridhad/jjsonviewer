@@ -7,7 +7,10 @@
 }
 .jjson-container,
 .jjson-container ul{
-    list-style: none outside none;
+    list-style: none;
+}
+.jjson-container ul{
+    padding-left: 20px;
 }
 
 .jjson-container li {
@@ -17,6 +20,10 @@
 .jjson-container > li  > .key,
 .jjson-container .array .key{
     display: none;
+}
+
+.jjson-container .array .object .key{
+    display: inline;
 }
 
 .jjson-container li:after {
