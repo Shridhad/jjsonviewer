@@ -50,6 +50,9 @@
       		open = "[";
       		close = "]";
 		}
+		if(value === null) {
+			return '<li><span class="key">' + key + ': </span><span class="null">' + value + '</span></li>';	
+		}
 		if(type == "object") {
 			var object = '<li><span class="expanded"></span><span class="key">' + key + ': </span> <span class="open">' + open + '</span> <ul class="' + klass + '">';
 			object = object + json2html(value);

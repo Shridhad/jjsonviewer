@@ -82,4 +82,15 @@ describe("jjsonviewer jquery plugin", function() {
 		expect(stringValue).toBe("string");	
 		expect(key).toContain("object");	
 	});
+
+	it("should parse json with null", function() {
+		json = '{"null": null}';
+		$("#jjson").jJsonViewer(json);		
+
+		var key = $(".jjson-container").find(".key:eq(1)").text(),
+			value = $(".jjson-container").find(".null").text();
+
+		expect(value).toBe("null");
+		expect(key).toContain("null");	
+	});
 });
