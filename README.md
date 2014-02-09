@@ -1,7 +1,7 @@
 jJsonViewer
 ===========
 
-`jJsonViewer` is a jquery plugin which you can all on any jquery element. This function needs stringified `JSON' as input which will be converted into html and added into given element.
+`jJsonViewer` is a jquery plugin which you can all on any jquery element. This function needs `stringified JSON` as input which will be converted into html and added into given element.
 
 ```javascript
 
@@ -12,3 +12,7 @@ jJsonViewer
 ```
 
 This plugin includes JSON neautifier, you can expand and collapse JSON objects. 
+
+Here is how it will look. 
+
+![Output of jJsonViewer](https://github.com/Shridhad/jjsonviewer/blob/master/images/example.png "Output of jJsonViewer")
