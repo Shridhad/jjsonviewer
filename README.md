@@ -15,4 +15,4 @@ This plugin includes JSON neautifier, you can expand and collapse JSON objects.
 
 Here is how it will look. 
 
-![Output of jJsonViewer](https://github.com/Shridhad/jjsonviewer/blob/master/images/example.png "Output of jJsonViewer")
+![Output of jJsonViewer](https://raw.github.com/Shridhad/jjsonviewer/master/images/example.png "Output of jJsonViewer")
