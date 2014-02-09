@@ -4,17 +4,13 @@
 
   	$.fn.jJsonViewer = function (jjson) {
 	    return this.each(function () {
-	    	var self = $(this), 
-	          	json = self.data('jjson');
-	      	if (!json) {
-	        	if (typeof jjson == 'string') {
-	          		json = jjson;
-	          		self.data('jjson', jjson);
-	        	} 
-	        	else {
-	          		self.data('jjson', '');
-	        	}
-	      	}
+	    	var self = $(this);
+        	if (typeof jjson == 'string') {
+          		self.data('jjson', jjson);
+        	} 
+        	else {
+          		self.data('jjson', '');
+        	}
 	      	new JJsonViewer(self);
 	    });
   	};
