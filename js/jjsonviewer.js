@@ -61,7 +61,7 @@
 			object = object + json2html(value);
 			return object + '</ul><span class="close">' + close + '</span></li>';
 		}
-		if(type == "number") {
+		if(type == "number" || type == "boolean") {
 			return '<li><span class="key">"' + encode(key) + '": </span><span class="'+ type + '">' + encode(value) + '</span></li>';	
 		}
 		return '<li><span class="key">"' + encode(key) + '": </span><span class="'+ type + '">"' + encode(value) + '"</span></li>';
