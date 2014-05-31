@@ -2,7 +2,6 @@ describe("jjsonviewer jquery plugin", function() {
 	var fixture = "<div id='jjson'></div>",
 		json = null;	
 
-
 	beforeEach(function(){
 		setFixtures(fixture);
 	});
@@ -15,7 +14,7 @@ describe("jjsonviewer jquery plugin", function() {
 			value = parseInt($(".jjson-container").find(".number").text());
 
 		expect(value).toBe(12345678);
-		expect(key).toContain("number1");	
+		expect(key).toContain('"number1"');	
 	});
 
 	it("should parse json with string", function() {
@@ -25,8 +24,8 @@ describe("jjsonviewer jquery plugin", function() {
 		var key = $(".jjson-container").find(".key:eq(1)").text(),
 			value = $(".jjson-container").find(".string").text();
 
-		expect(value).toBe("name");
-		expect(key).toContain("string");	
+		expect(value).toBe('"name"');
+		expect(key).toContain('"string"');	
 	});
 
 	it("should parse json with boolean", function() {
@@ -37,7 +36,7 @@ describe("jjsonviewer jquery plugin", function() {
 			value = !!$(".jjson-container").find(".boolean").text();
 
 		expect(value).toBe(true);
-		expect(key).toContain("boolean");	
+		expect(key).toContain('"boolean"');	
 	});
 
 	it("should parse json with array", function() {
@@ -51,8 +50,8 @@ describe("jjsonviewer jquery plugin", function() {
 
 		expect(number).toBe(1);
 		expect(booleanValue).toBe(true);
-		expect(string).toBe("string");	
-		expect(key).toContain("array");	
+		expect(string).toBe('"string"');	
+		expect(key).toContain('"array"');	
 	});
 
 	it("should hide index keys of array elements", function() {
@@ -78,8 +77,8 @@ describe("jjsonviewer jquery plugin", function() {
 
 		expect(numberKey).toContain("number");
 		expect(numberValue).toBe(1);
-		expect(stringKey).toContain("string");
-		expect(stringValue).toBe("string");	
+		expect(stringKey).toContain('"string"');
+		expect(stringValue).toBe('"string"');	
 		expect(key).toContain("object");	
 	});
 
@@ -90,7 +89,7 @@ describe("jjsonviewer jquery plugin", function() {
 		var key = $(".jjson-container").find(".key:eq(1)").text(),
 			value = $(".jjson-container").find(".null").text();
 
-		expect(value).toBe("null");
-		expect(key).toContain("null");	
+		expect(value).toBe('"null"');
+		expect(key).toContain('"null"');	
 	});
 });
