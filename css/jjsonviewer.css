@@ -7,7 +7,7 @@
 }
 .jjson-container,
 .jjson-container ul{
-    list-style: none;
+    list-style: none !important;
 }
 .jjson-container ul{
     padding-left: 20px;
