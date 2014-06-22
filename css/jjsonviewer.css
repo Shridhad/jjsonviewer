@@ -10,7 +10,9 @@
     list-style: none !important;
 }
 .jjson-container ul{
-    padding-left: 20px;
+    padding: 0px !important;
+    padding-left: 20px !important;
+    margin: 0px !important;
 }
 
 .jjson-container li {
