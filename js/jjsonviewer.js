@@ -22,7 +22,7 @@
 		var json = $.parseJSON(self.data('jjson'));
 		options = $.extend({}, this.defaults, options);
 		var expanderClasses = getExpanderClasses(options.expanded);
-		self.html('<ul class='jjson-container'></ul>');
+		self.html('<ul class="jjson-container"></ul>');
 		self.find('.jjson-container').append(json2html([json], expanderClasses));
 	}
 
