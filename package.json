@@ -1,0 +1,31 @@
+{
+  "name": "jjsonviewer",
+  "version": "1.0.0",
+  "description": "Jquery plugin to beutify and view inline json",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shridhad/jjsonviewer.git"
+  },
+  "keywords": [
+    "jjsonviewer",
+    "json",
+    "viewer"
+  ],
+  "author": "Shridhar Deshmukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shridhad/jjsonviewer/issues"
+  },
+  "homepage": "https://github.com/Shridhad/jjsonviewer",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.11.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "testem": "~0.8.0",
+    "phantomjs": "~1.9.16"
+  }
+}

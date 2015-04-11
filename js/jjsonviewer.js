@@ -5,16 +5,16 @@
 	$.fn.jJsonViewer = function(jjson, options) {
     return this.each( function() {
     	var self = $(this);
-      	if (typeof jjson == 'string') {
-    			self.data('jjson', jjson);
-      	}
-      	else if(typeof jjson == 'object') {
-    			self.data('jjson', JSON.stringify(jjson))
-      	}
-      	else {
-    			self.data('jjson', '');
-      	}
-      	new JJsonViewer(self, options);
+    	if (typeof jjson == 'string') {
+  			self.data('jjson', jjson);
+    	}
+    	else if(typeof jjson == 'object') {
+  			self.data('jjson', JSON.stringify(jjson))
+    	}
+    	else {
+  			self.data('jjson', '');
+    	}
+    	new JJsonViewer(self, options);
     });
 	};
 
