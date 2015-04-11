@@ -27,5 +27,8 @@
     "grunt-contrib-watch": "~0.6.1",
     "testem": "~0.8.0",
     "phantomjs": "~1.9.16"
+  },
+  "scripts": {
+    "test": "testem"
   }
 }
