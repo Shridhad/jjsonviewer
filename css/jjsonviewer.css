@@ -29,7 +29,7 @@
 }
 
 .jjson-container li:after {
-    content: ",";    
+    content: ",";
 }
 
 .jjson-container li:last-child:after {
@@ -76,6 +76,10 @@
 }
 
 .jjson-container li .collapsed ~ .close:before {
-    content: "... ";    
+    content: "... ";
     color: #999;
+}
+
+.jjson-container .hidden ~ ul {
+  display: none;
 }
