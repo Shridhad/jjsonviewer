@@ -1,7 +1,5 @@
-jJsonViewer
+jJsonViewer [![Build Status](https://travis-ci.org/shridhad/jjsonviewer.png)](https://travis-ci.org/shridhad/jjsonviewer)
 ===========
-
-[![Build Status](https://travis-ci.org/shwetado/jjsonviewer.png)](https://travis-ci.org/shwetado/jjsonviewer)
 
 [`jJsonViewer`](http://shridhad.github.io/blog/2014/02/15/jjsonviewer-jquery-plugin/) is a jquery plugin which you can call on any jquery element. This function takes `JSON` or `stringified JSON` as input which will be converted into html and added into given element.
 
