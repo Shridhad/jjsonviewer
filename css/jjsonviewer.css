@@ -4,6 +4,7 @@
     font-family: monospace;
     padding-left: 0;
     margin-left: 20px;
+    overflow: auto;
 }
 .jjson-container,
 .jjson-container ul{
