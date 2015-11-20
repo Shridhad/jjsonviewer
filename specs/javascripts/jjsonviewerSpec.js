@@ -93,5 +93,17 @@ define(['jjsonviewer'], function() {
 			expect(value).toBe('"null"');
 			expect(key).toContain('"null"');
 		});
+
+		it("should hadle json parse exception", function() {
+			json = '{"abc" "Hello"}';
+			$("#jjson").jJsonViewer(json);
+
+			var error = $(".jjson-error").text(),
+					value = $(".jjson-container").text();
+
+			expect(error).toContain("SyntaxError");
+			expect(value).toBe(json);
+
+		});
 	});
 });
