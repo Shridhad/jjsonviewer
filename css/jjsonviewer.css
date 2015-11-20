@@ -21,11 +21,11 @@
 }
 
 .jjson-container > li  > .key,
-.jjson-container .array .key{
+.jjson-container .array .key {
     display: none;
 }
 
-.jjson-container .array .object .key{
+.jjson-container .array .object .key {
     display: inline;
 }
 
@@ -37,26 +37,29 @@
     content: "";
 }
 
-.jjson-container .null{
+.jjson-container .null {
     color: #999;
 }
-.jjson-container .string{
+.jjson-container .string {
     color: #4e9a06;
 }
-.jjson-container .number{
+.jjson-container .number {
     color: #a40000;
 }
-.jjson-container .boolean{
+.jjson-container .boolean {
     color: #c4a000;
 }
-.jjson-container .key{
+.jjson-container .key {
     color: #204a87;
 }
-.jjson-container .expanded{
+.jjson-error {
+    margin: 10px;
+    color: rgb(239, 62, 62);
+}
+.jjson-container .expanded {
     cursor: pointer;
 }
-
-.jjson-container .expanded:before{
+.jjson-container .expanded:before {
     content: "-";
     font-size: 16px;
     width: 13px;
@@ -69,7 +72,7 @@
     top: 3px;
 }
 
-.jjson-container .collapsed:before{
+.jjson-container .collapsed:before {
     content: "+";
     font-size: 14px;
     color: #000;

@@ -19,11 +19,16 @@
 	};
 
 	function JJsonViewer(self, options) {
-		var json = $.parseJSON(self.data('jjson'));
-		options = $.extend({}, this.defaults, options);
-		var expanderClasses = getExpanderClasses(options.expanded);
 		self.html('<ul class="jjson-container"></ul>');
-		self.find('.jjson-container').append(json2html([json], expanderClasses));
+		try {
+			var json = $.parseJSON(self.data('jjson'));
+			options = $.extend({}, this.defaults, options);
+			var expanderClasses = getExpanderClasses(options.expanded);
+			self.find('.jjson-container').append(json2html([json], expanderClasses));
+		} catch(e) {
+			self.prepend('<div class="jjson-error" >' + e.toString() + ' </div>');
+			self.find('.jjson-container').append(self.data('jjson'));
+		}
 	}
 
 	function getExpanderClasses(expanded) {
