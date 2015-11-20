@@ -87,3 +87,7 @@
 .jjson-container .hidden ~ ul {
   display: none;
 }
+
+.jjson-container span {
+    position: static !important;
+}
