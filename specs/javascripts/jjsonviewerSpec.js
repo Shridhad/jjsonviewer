@@ -90,8 +90,8 @@ define(['jjsonviewer'], function() {
 			var key = $(".jjson-container").find(".key:eq(1)").text(),
 				value = $(".jjson-container").find(".null").text();
 
-			expect(value).toBe('"null"');
-			expect(key).toContain('"null"');
+			expect(value).toBe('null');
+			expect(key).toContain('null');
 		});
 
 		it("should hadle json parse exception", function() {
