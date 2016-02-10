@@ -65,7 +65,7 @@
       		close = ']';
 		}
 		if(value === null) {
-			return '<li><span class="key">"' + encode(key) + '": </span><span class="null">"' + encode(value) + '"</span></li>';
+			return '<li><span class="key">"' + encode(key) + '": </span><span class="null">null</span></li>';
 		}
 		if(type == 'object') {
 			var object = '<li><span class="'+ expanderClasses +'"></span><span class="key">"' + encode(key) + '": </span> <span class="open">' + open + '</span> <ul class="' + klass + '">';
