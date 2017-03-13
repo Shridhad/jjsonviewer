@@ -68,9 +68,9 @@
 			return '<li><span class="key">"' + encode(key) + '": </span><span class="null">null</span></li>';
 		}
 		if(type == 'object') {
-			var object = '<li><span class="'+ expanderClasses +'"></span><span class="key">"' + encode(key) + '": </span> <span class="open">' + open + '</span> <ul class="' + klass + '">';
+			var object = '<li><span class="'+ expanderClasses +'"></span><span class="key">"' + encode(key) + '": </span> <span class="jjson-open">' + open + '</span> <ul class="' + klass + '">';
 			object = object + json2html(value, expanderClasses);
-			return object + '</ul><span class="close">' + close + '</span></li>';
+			return object + '</ul><span class="jjson-close">' + close + '</span></li>';
 		}
 		if(type == 'number' || type == 'boolean') {
 			return '<li><span class="key">"' + encode(key) + '": </span><span class="'+ type + '">' + encode(value) + '</span></li>';
