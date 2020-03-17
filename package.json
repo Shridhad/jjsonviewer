@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Shridhad/jjsonviewer",
   "devDependencies": {
-    "grunt": "~1.0.1",
+    "grunt": "~1.1.0",
     "grunt-contrib-jshint": "~1.1.0",
     "grunt-contrib-watch": "~1.0.0",
     "testem": "~1.18.4",
